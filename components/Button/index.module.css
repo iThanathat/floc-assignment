@@ -1,0 +1,14 @@
+.button {
+  @apply cursor-pointer transition-colors delay-[10ms] border border-transparent;
+}
+.primary {
+  @apply bg-primary text-white hover:bg-transparent hover:text-primary hover:border-black active:bg-primary active:text-white;
+}
+
+.secondary {
+  @apply bg-secondary text-white hover:bg-transparent hover:border-secondary hover:text-secondary active:bg-secondary active:text-white;
+}
+
+.outline-secondary {
+  @apply bg-transparent border-secondary text-secondary hover:bg-secondary hover:text-white hover:border-transparent active:text-secondary active:bg-transparent active:border-secondary;
+}
