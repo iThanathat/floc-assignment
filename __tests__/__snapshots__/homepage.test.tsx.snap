@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="min-h-screen bg-[#F6F3EE]"
+  >
+    <div
+      class="w-full flex justify-between p-4"
+    >
+      <div
+        class="w-1/2"
+      >
+        <img
+          alt="floc"
+          data-nimg="1"
+          decoding="async"
+          height="50"
+          loading="lazy"
+          src="/images/floc-logo.svg"
+          style="color: transparent;"
+          width="50"
+        />
+      </div>
+      <div
+        class="flex w-1/2 justify-evenly"
+      >
+        <p>
+          Creatives
+        </p>
+        <p>
+          Package
+        </p>
+        <p>
+          Jobs
+        </p>
+        <p>
+          About
+        </p>
+        <p>
+          Profile
+        </p>
+      </div>
+    </div>
+    <div
+      class="m-4"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="flex justify-center"
+        >
+          <img
+            alt="content"
+            class="rounded-2xl"
+            data-nimg="1"
+            decoding="async"
+            height="280"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fimage.png&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fimage.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fimage.png&w=640&q=75 2x"
+            style="color: transparent;"
+            width="280"
+          />
+        </div>
+        <h2
+          class="text-black font-semibold text-xl mt-4"
+        >
+          full production content create pack
+        </h2>
+        <div
+          class="mt-4 text-black"
+        >
+          <p>
+            x1 producer
+          </p>
+          <p>
+            x1 photographer
+          </p>
+        </div>
+      </div>
+      <button
+        class="button primary mt-4 py-4 px-6 rounded-full"
+      >
+        search
+      </button>
+      <button
+        class="button secondary mt-4 py-4 px-6 rounded-full"
+      >
+        Join
+      </button>
+      <button
+        class="button outline-secondary mt-4 py-4 px-6 rounded-full"
+      >
+        Join
+      </button>
+    </div>
+  </div>
+</div>
+`;
