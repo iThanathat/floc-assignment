@@ -6,7 +6,7 @@ exports[`renders homepage unchanged 1`] = `
     class="min-h-screen bg-[#F6F3EE]"
   >
     <div
-      class="w-full flex justify-between p-4"
+      class="relative w-full flex justify-between p-4 shadow-lg z-[9999]"
     >
       <div
         class="w-1/2"
@@ -23,7 +23,7 @@ exports[`renders homepage unchanged 1`] = `
         />
       </div>
       <div
-        class="flex w-1/2 justify-evenly"
+        class="flex w-1/2 justify-evenly text-primary"
       >
         <p>
           Creatives
@@ -43,58 +43,142 @@ exports[`renders homepage unchanged 1`] = `
       </div>
     </div>
     <div
-      class="m-4"
+      class="h-screen"
     >
-      <div
-        class="card"
+      <section
+        class="flex items-center justify-center bg-[#E7DFD3] h-1/2"
+        id="banner"
       >
         <div
-          class="flex justify-center"
+          class=""
         >
+          <h1
+            class="text-6xl text-primary leading-snug font-medium"
+          >
+            Find your flexible 
+            <br />
+             top talent
+          </h1>
+          <p
+            class="text-primary mt-4"
+          >
+            lorem ipsum dolor sit amet consectetur. 
+            <br />
+            Quis integer parturient senectus varius id.
+          </p>
+        </div>
+        <div>
           <img
-            alt="content"
-            class="rounded-2xl"
+            alt="banner-illus"
             data-nimg="1"
             decoding="async"
-            height="280"
+            height="600"
             loading="lazy"
-            src="/_next/image?url=%2Fimages%2Fimage.png&w=640&q=75"
-            srcset="/_next/image?url=%2Fimages%2Fimage.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fimage.png&w=640&q=75 2x"
+            src="/_next/image?url=%2Fimages%2FLanding-Page-Illus.png&w=1200&q=75"
+            srcset="/_next/image?url=%2Fimages%2FLanding-Page-Illus.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2FLanding-Page-Illus.png&w=1200&q=75 2x"
             style="color: transparent;"
-            width="280"
+            width="600"
           />
         </div>
-        <h2
-          class="text-black font-semibold text-xl mt-4"
-        >
-          full production content create pack
-        </h2>
+      </section>
+      <section
+        class="px-20 py-10 h-full bg-[#F6F3EE]"
+      >
         <div
-          class="mt-4 text-black"
+          class="border-b border-[#B9B8B7] pb-6"
         >
-          <p>
-            x1 producer
-          </p>
-          <p>
-            x1 photographer
-          </p>
+          <h2
+            class="text-primary text-[32px] font-medium"
+          >
+            explore packages
+          </h2>
         </div>
-      </div>
-      <button
-        class="button primary mt-4 py-4 px-6 rounded-full"
-      >
-        search
-      </button>
-      <button
-        class="button secondary mt-4 py-4 px-6 rounded-full"
-      >
-        Join
-      </button>
-      <button
-        class="button outline-secondary mt-4 py-4 px-6 rounded-full"
-      >
-        Join
-      </button>
+        <div
+          class="p-4"
+        >
+          <div
+            class="flex items-center justify-evenly"
+          >
+            <p
+              class="text-primary font-semibold p-[10px]"
+            >
+              filter
+            </p>
+            <div
+              class="w-[200px]"
+            >
+              <div
+                class="dropdown"
+              >
+                <label
+                  class="px-2 w-full"
+                  tabindex="0"
+                >
+                  <span
+                    class="label "
+                  >
+                    content type
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div
+              class="w-[200px]"
+            >
+              <div
+                class="dropdown"
+              >
+                <label
+                  class="px-2 w-full"
+                  tabindex="0"
+                >
+                  <span
+                    class="label "
+                  >
+                    objective
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div
+              class="w-[200px]"
+            >
+              <div
+                class="dropdown"
+              >
+                <label
+                  class="px-2 w-full"
+                  tabindex="0"
+                >
+                  <span
+                    class="label "
+                  >
+                    value
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div
+              class="w-[200px]"
+            >
+              <div
+                class="dropdown"
+              >
+                <label
+                  class="px-2 w-full"
+                  tabindex="0"
+                >
+                  <span
+                    class="label "
+                  >
+                    hiring model
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </div>
