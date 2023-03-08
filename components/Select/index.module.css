@@ -1,0 +1,20 @@
+.dropdown {
+  @apply relative w-full px-[10px] py-[8px] text-center;
+}
+
+.dropdown-open {
+  @apply relative flex flex-col justify-center items-center w-full rounded-t-box shadow-[0px_4px_4px_rgba(0,0,0,0.25)] bg-[#E7DFD3];
+}
+
+.label {
+  @apply p-2 text-primary font-medium;
+}
+
+.label::after {
+  @apply ml-2;
+  content: url("/icons/down-arrow.svg");
+}
+
+.dropdown-options {
+  @apply absolute top-full left-0 right-0 z-[99] px-6 py-2 w-full rounded-b-box flex flex-col gap-2 items-start text-primary shadow-[0px_4px_4px_rgba(0,0,0,0.25)] bg-[#E7DFD3];
+}
