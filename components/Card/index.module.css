@@ -1,3 +1,9 @@
+/* card with active effect */
+/* .card {
+  @apply w-[300px] p-4 border-2 border-black rounded-2xl shadow-[4px_4px_0px_black] hover:bg-[#E7DFD3] cursor-pointer active:shadow-[1px_2px_0px_black];
+} */
+
+/* card with no active effect */
 .card {
-  @apply w-[300px] p-4 border-2 border-black rounded-2xl shadow-[4px_4px_0px_black] hover:bg-[#E7DFD3] active:shadow-[1px_2px_0px_black] cursor-pointer;
+  @apply w-[300px] p-4 border-2 border-black rounded-2xl shadow-[4px_4px_0px_black] hover:bg-[#E7DFD3] cursor-pointer;
 }
