@@ -1,29 +1,37 @@
-# Next.js + Jest
+# Floc's Assignment
 
-This example shows how to configure Jest to work with Next.js.
+This project is for doing assignment for `Floc`
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript.
+## Getting Started
 
-## How to Use
+Clone this project. Go to project directory and run this command:
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
-
-In your terminal, run the following command:
-
-```bash
-npx create-next-app --example with-jest with-jest-app
+```
+npm install
+# or
+yarn install
+# or
+pnpm install
 ```
 
-```bash
-yarn create next-app --example with-jest with-jest-app
+After you done with install, then run the development server:
+
+```
+npm run dev
+# or
+yarn run dev
+# or
+pnpm run dev
 ```
 
-```bash
-pnpm create next-app --example with-jest with-jest-app
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
 
-## Run Jest Tests
+## Tool
 
-```bash
-npm test
-```
+- [Next.js](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Daisy UI](https://daisyui.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
