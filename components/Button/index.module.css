@@ -5,6 +5,10 @@
   @apply bg-primary text-white hover:bg-transparent hover:text-primary hover:border-black active:bg-primary active:text-white;
 }
 
+.outline-primary {
+  @apply bg-transparent border-primary text-primary hover:bg-primary hover:text-white hover:border-transparent active:bg-transparent active:text-primary;
+}
+
 .secondary {
   @apply bg-secondary text-white hover:bg-transparent hover:border-secondary hover:text-secondary active:bg-secondary active:text-white;
 }

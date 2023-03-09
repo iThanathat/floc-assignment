@@ -15,6 +15,8 @@ const Button: React.FC<ButtonProps> = ({
         return styles.secondary;
       case "outline-secondary":
         return styles["outline-secondary"];
+      case "outline-primary":
+        return styles["outline-primary"];
       default:
         return styles.primary;
     }
@@ -23,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       className={`${styles.button} ${styleSelector()} ${
         className ? className : ""
-      } py-4 px-6 rounded-full`}
+      } py-2 px-6 rounded-full`}
       onClick={onClick}
     >
       {children}
