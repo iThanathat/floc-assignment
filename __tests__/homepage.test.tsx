@@ -1,7 +1,9 @@
-import { render } from '@testing-library/react'
-import Home from '@/pages/index'
+import { render } from "@testing-library/react";
+import Home from "@/pages/index";
 
-it('renders homepage unchanged', () => {
-  const { container } = render(<Home />)
-  expect(container).toMatchSnapshot()
-})
+jest.mock("next/router", () => ({ useRouter: jest.fn() }));
+
+it("renders homepage unchanged", () => {
+  const { container } = render(<Home />);
+  expect(container).toMatchSnapshot();
+});

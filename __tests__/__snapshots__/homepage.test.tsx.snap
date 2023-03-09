@@ -3,50 +3,75 @@
 exports[`renders homepage unchanged 1`] = `
 <div>
   <div
-    class="min-h-screen bg-[#F6F3EE]"
+    class="min-h-screen relative z-10 bg-[#F6F3EE]"
   >
     <div
-      class="relative w-full flex justify-between p-4 shadow-lg z-[9999]"
+      class="relative w-full shadow-lg z-[1]"
     >
       <div
-        class="w-1/2"
+        class="max-w-[1600px] m-auto flex justify-between items-center px-6 py-4"
       >
-        <img
-          alt="floc"
-          data-nimg="1"
-          decoding="async"
-          height="50"
-          loading="lazy"
-          src="/images/floc-logo.svg"
-          style="color: transparent;"
-          width="50"
-        />
-      </div>
-      <div
-        class="flex w-1/2 justify-evenly text-primary"
-      >
-        <p>
-          Creatives
-        </p>
-        <p>
-          Package
-        </p>
-        <p>
-          Jobs
-        </p>
-        <p>
-          About
-        </p>
-        <p>
-          Profile
-        </p>
+        <div
+          class="w-1/2"
+        >
+          <img
+            alt="floc"
+            class="cursor-pointer"
+            data-nimg="1"
+            decoding="async"
+            height="50"
+            loading="lazy"
+            src="/images/floc-logo.svg"
+            style="color: transparent;"
+            width="50"
+          />
+        </div>
+        <div
+          class="flex w-1/2 gap-8 items-center justify-end"
+        >
+          <a
+            class="text-primary hover:underline"
+            href="/"
+          >
+            Creatives
+          </a>
+          <a
+            class="text-primary hover:underline"
+            href="/"
+          >
+            Package
+          </a>
+          <a
+            class="text-primary hover:underline"
+            href="/"
+          >
+            Jobs
+          </a>
+          <a
+            class="text-primary hover:underline"
+            href="/"
+          >
+            About
+          </a>
+          <a
+            class="text-primary hover:underline"
+            href="/"
+          >
+            Sign In
+          </a>
+          <button
+            class="button outline-secondary  py-2 px-6 rounded-full"
+          >
+            Log in
+          </button>
+        </div>
       </div>
     </div>
     <div
-      class="h-screen"
+      class="max-w-[1600px] m-auto"
     >
       <section
-        class="flex items-center justify-center bg-[#E7DFD3] h-1/2"
+        class="flex items-center justify-center bg-[#E7DFD3] h-[500px]"
         id="banner"
       >
         <div
@@ -82,7 +107,7 @@ exports[`renders homepage unchanged 1`] = `
         </div>
       </section>
       <section
-        class="px-20 py-10 h-full bg-[#F6F3EE]"
+        class="px-20 py-8 h-full bg-[#F6F3EE]"
       >
         <div
           class="border-b border-[#B9B8B7] pb-6"
@@ -94,10 +119,10 @@ exports[`renders homepage unchanged 1`] = `
           </h2>
         </div>
         <div
-          class="p-4"
+          class="px-4 py-6"
         >
           <div
-            class="flex items-center justify-evenly"
+            class="flex items-center justify-between"
           >
             <p
               class="text-primary font-semibold p-[10px]"
@@ -176,9 +201,538 @@ exports[`renders homepage unchanged 1`] = `
                 </label>
               </div>
             </div>
+            <div
+              class="w-[350px] relative"
+            >
+              <input
+                class="w-full bg-transparent border-b border-primary"
+                placeholder="what are you looking for?"
+                type="text"
+              />
+              <button
+                class="button primary absolute bottom-0 right-[-16px] py-2 px-6 rounded-full"
+              >
+                search
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-4"
+        >
+          <div
+            class="flex justify-between items-center"
+          >
+            <h3
+              class="text-primary text-2xl font-medium"
+            >
+              create a stunning content
+            </h3>
+            <button
+              class="button outline-primary  py-2 px-6 rounded-full"
+            >
+              View all
+            </button>
+          </div>
+          <div
+            class="flex flex-col items-center gap-8 mt-4 lg:flex-row lg:items-stretch lg:justify-between "
+          >
+            <div
+              class="w-[300px] card"
+            >
+              <div
+                class="flex flex-col"
+              >
+                <img
+                  alt="full production content create pack"
+                  class="self-center"
+                  data-nimg="1"
+                  decoding="async"
+                  height="250"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimages%2FImage.png&w=640&q=75"
+                  srcset="/_next/image?url=%2Fimages%2FImage.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2FImage.png&w=640&q=75 2x"
+                  style="color: transparent;"
+                  width="250"
+                />
+                <p
+                  class="mt-2 text-primary font-semibold"
+                >
+                  full production content create pack
+                </p>
+                <div
+                  class="mt-2 flex flex-col gap-2"
+                >
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    producer
+                  </p>
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    photographer
+                  </p>
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    retoucher and more
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[300px] card"
+            >
+              <div
+                class="flex flex-col"
+              >
+                <img
+                  alt="4-month social media"
+                  class="self-center"
+                  data-nimg="1"
+                  decoding="async"
+                  height="250"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimages%2FImage.png&w=640&q=75"
+                  srcset="/_next/image?url=%2Fimages%2FImage.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2FImage.png&w=640&q=75 2x"
+                  style="color: transparent;"
+                  width="250"
+                />
+                <p
+                  class="mt-2 text-primary font-semibold"
+                >
+                  4-month social media
+                </p>
+                <div
+                  class="mt-2 flex flex-col gap-2"
+                >
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    photographer
+                  </p>
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    (+
+                    photo enhancement included
+                    )
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[300px] card"
+            >
+              <div
+                class="flex flex-col"
+              >
+                <img
+                  alt="social media illustration"
+                  class="self-center"
+                  data-nimg="1"
+                  decoding="async"
+                  height="250"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimages%2FImage.png&w=640&q=75"
+                  srcset="/_next/image?url=%2Fimages%2FImage.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2FImage.png&w=640&q=75 2x"
+                  style="color: transparent;"
+                  width="250"
+                />
+                <p
+                  class="mt-2 text-primary font-semibold"
+                >
+                  social media illustration
+                </p>
+                <div
+                  class="mt-2 flex flex-col gap-2"
+                >
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    graphic designer
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[300px] card"
+            >
+              <div
+                class="flex flex-col"
+              >
+                <img
+                  alt="Fashion billboard design"
+                  class="self-center"
+                  data-nimg="1"
+                  decoding="async"
+                  height="250"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimages%2FImage.png&w=640&q=75"
+                  srcset="/_next/image?url=%2Fimages%2FImage.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2FImage.png&w=640&q=75 2x"
+                  style="color: transparent;"
+                  width="250"
+                />
+                <p
+                  class="mt-2 text-primary font-semibold"
+                >
+                  Fashion billboard design
+                </p>
+                <div
+                  class="mt-2 flex flex-col gap-2"
+                >
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    graphic designer
+                  </p>
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    stylist
+                  </p>
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    retoucher
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="px-4 py-8"
+        >
+          <div
+            class="flex justify-between items-center"
+          >
+            <h3
+              class="text-primary text-2xl font-medium"
+            >
+              let’s make a big move to our society
+            </h3>
+            <button
+              class="button outline-primary  py-2 px-6 rounded-full"
+            >
+              View all
+            </button>
+          </div>
+          <div
+            class="flex flex-col items-center gap-8 mt-4 lg:flex-row lg:items-stretch lg:justify-between "
+          >
+            <div
+              class="w-[300px] card"
+            >
+              <div
+                class="flex flex-col"
+              >
+                <img
+                  alt="full production content create pack"
+                  class="self-center"
+                  data-nimg="1"
+                  decoding="async"
+                  height="250"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimages%2FImage.png&w=640&q=75"
+                  srcset="/_next/image?url=%2Fimages%2FImage.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2FImage.png&w=640&q=75 2x"
+                  style="color: transparent;"
+                  width="250"
+                />
+                <p
+                  class="mt-2 text-primary font-semibold"
+                >
+                  full production content create pack
+                </p>
+                <div
+                  class="mt-2 flex flex-col gap-2"
+                >
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    producer
+                  </p>
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    photographer
+                  </p>
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    retoucher and more
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[300px] card"
+            >
+              <div
+                class="flex flex-col"
+              >
+                <img
+                  alt="4-month social media"
+                  class="self-center"
+                  data-nimg="1"
+                  decoding="async"
+                  height="250"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimages%2FImage.png&w=640&q=75"
+                  srcset="/_next/image?url=%2Fimages%2FImage.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2FImage.png&w=640&q=75 2x"
+                  style="color: transparent;"
+                  width="250"
+                />
+                <p
+                  class="mt-2 text-primary font-semibold"
+                >
+                  4-month social media
+                </p>
+                <div
+                  class="mt-2 flex flex-col gap-2"
+                >
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    photographer
+                  </p>
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    (+
+                    photo enhancement included
+                    )
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[300px] card"
+            >
+              <div
+                class="flex flex-col"
+              >
+                <img
+                  alt="social media illustration"
+                  class="self-center"
+                  data-nimg="1"
+                  decoding="async"
+                  height="250"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimages%2FImage.png&w=640&q=75"
+                  srcset="/_next/image?url=%2Fimages%2FImage.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2FImage.png&w=640&q=75 2x"
+                  style="color: transparent;"
+                  width="250"
+                />
+                <p
+                  class="mt-2 text-primary font-semibold"
+                >
+                  social media illustration
+                </p>
+                <div
+                  class="mt-2 flex flex-col gap-2"
+                >
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    graphic designer
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[300px] card"
+            >
+              <div
+                class="flex flex-col"
+              >
+                <img
+                  alt="Fashion billboard design"
+                  class="self-center"
+                  data-nimg="1"
+                  decoding="async"
+                  height="250"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimages%2FImage.png&w=640&q=75"
+                  srcset="/_next/image?url=%2Fimages%2FImage.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2FImage.png&w=640&q=75 2x"
+                  style="color: transparent;"
+                  width="250"
+                />
+                <p
+                  class="mt-2 text-primary font-semibold"
+                >
+                  Fashion billboard design
+                </p>
+                <div
+                  class="mt-2 flex flex-col gap-2"
+                >
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    graphic designer
+                  </p>
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    stylist
+                  </p>
+                  <p
+                    class="text-primary text-sm"
+                  >
+                    x
+                    1
+                     
+                    retoucher
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <div
+        class="pt-14 pb-14"
+      >
+        <div
+          class="text-center"
+        >
+          <p
+            class="text-2xl text-primary"
+          >
+            need help finding the right package?
+          </p>
+          <button
+            class="button primary mt-4 py-2 px-6 rounded-full"
+          >
+            find me package
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal backdrop-blur-sm"
+  >
+    <div
+      class="modal-box relative overflow-visible"
+    >
+      <div
+        class="p-10"
+      >
+        <div
+          class="flex flex-col items-center"
+        >
+          <p
+            class="text-primary text-2xl font-semibold"
+          >
+            Log in
+          </p>
+          <div
+            class="mt-4 flex flex-col w-full gap-4"
+          >
+            <div
+              class="text-field"
+            >
+              <div
+                class="bg-transparent absolute top-[12px] left-[16px] m-auto"
+              >
+                <img
+                  alt="email"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2FIcon2.png&w=48&q=75"
+                  srcset="/_next/image?url=%2Ficons%2FIcon2.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2FIcon2.png&w=48&q=75 2x"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </div>
+              <input
+                class="p-2 w-full text-primary border-2 border-[#E0E2E9]  pl-12 outline-none rounded-lg  focus:border-primary"
+                placeholder="Your email"
+                value=""
+              />
+            </div>
+            <div
+              class="text-field"
+            >
+              <div
+                class="bg-transparent absolute top-[12px] left-[16px] m-auto"
+              >
+                <img
+                  alt="email"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2FIcon1.png&w=48&q=75"
+                  srcset="/_next/image?url=%2Ficons%2FIcon1.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2FIcon1.png&w=48&q=75 2x"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </div>
+              <input
+                class="p-2 w-full text-primary border-2 border-[#E0E2E9]  pl-12 outline-none rounded-lg  focus:border-primary"
+                placeholder="Password"
+                type="password"
+                value=""
+              />
+            </div>
+            <button
+              class="button secondary btn rounded-lg py-2 px-6 rounded-full"
+            >
+              Log in
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
