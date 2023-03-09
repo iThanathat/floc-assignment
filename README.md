@@ -2,9 +2,23 @@
 
 This project is for doing assignment for `Floc`
 
+## Requirements
+
+```
+Node.js version 14 or above
+```
+
 ## Getting Started
 
-Clone this project. Go to project directory and run this command:
+For The 1st Assignment I did compile a `.js` file to run a program. Run this command to see the result
+
+```
+node assignment1.js
+```
+
+You can find the original program before compile in `assignment1.ts` file
+
+For 2nd and 3rd Assignment. After clone this project. Go to project directory and run this command:
 
 ```
 npm install
