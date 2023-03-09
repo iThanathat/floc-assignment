@@ -1,12 +1,23 @@
-export const PACKAGES = [
+export type Package = {
+  id: string;
+  image: string;
+  name: string;
+  jobs: {
+    name: string;
+    qty: number;
+    additional?: string;
+  }[];
+};
+
+export const PACKAGES: Package[] = [
   {
     id: "1",
     image: "/images/Image.png",
     name: "full production content create pack",
     jobs: [
-      { name: "producer", qty: 1, additional: null },
-      { name: "photographer", qty: 1, additional: null },
-      { name: "retoucher and more", qty: 1, additional: null },
+      { name: "producer", qty: 1, additional: undefined },
+      { name: "photographer", qty: 1, additional: undefined },
+      { name: "retoucher and more", qty: 1, additional: undefined },
     ],
   },
   {
@@ -25,29 +36,29 @@ export const PACKAGES = [
     id: "3",
     image: "/images/Image.png",
     name: "social media illustration",
-    jobs: [{ name: "graphic designer", qty: 1, additional: null }],
+    jobs: [{ name: "graphic designer", qty: 1, additional: undefined }],
   },
   {
     id: "4",
     image: "/images/Image.png",
     name: "Fashion billboard design",
     jobs: [
-      { name: "graphic designer", qty: 1, additional: null },
-      { name: "stylist", qty: 1, additional: null },
-      { name: "retoucher", qty: 1, additional: null },
+      { name: "graphic designer", qty: 1, additional: undefined },
+      { name: "stylist", qty: 1, additional: undefined },
+      { name: "retoucher", qty: 1, additional: undefined },
     ],
   },
 ];
 
-export const ALL_PACKAGES = [
+export const ALL_PACKAGES: Package[] = [
   {
     id: "1",
     image: "/images/Image.png",
     name: "full production content create pack",
     jobs: [
-      { name: "producer", qty: 1, additional: null },
-      { name: "photographer", qty: 1, additional: null },
-      { name: "retoucher and more", qty: 1, additional: null },
+      { name: "producer", qty: 1, additional: undefined },
+      { name: "photographer", qty: 1, additional: undefined },
+      { name: "retoucher and more", qty: 1, additional: undefined },
     ],
   },
   {
@@ -66,16 +77,16 @@ export const ALL_PACKAGES = [
     id: "3",
     image: "/images/Image.png",
     name: "social media illustration",
-    jobs: [{ name: "graphic designer", qty: 1, additional: null }],
+    jobs: [{ name: "graphic designer", qty: 1, additional: undefined }],
   },
   {
     id: "4",
     image: "/images/Image.png",
     name: "Fashion billboard design",
     jobs: [
-      { name: "graphic designer", qty: 1, additional: null },
-      { name: "stylist", qty: 1, additional: null },
-      { name: "retoucher", qty: 1, additional: null },
+      { name: "graphic designer", qty: 1, additional: undefined },
+      { name: "stylist", qty: 1, additional: undefined },
+      { name: "retoucher", qty: 1, additional: undefined },
     ],
   },
   {
@@ -83,9 +94,9 @@ export const ALL_PACKAGES = [
     image: "/images/Image.png",
     name: "Magazine design",
     jobs: [
-      { name: "graphic designer", qty: 1, additional: null },
-      { name: "stylist", qty: 1, additional: null },
-      { name: "retoucher", qty: 1, additional: null },
+      { name: "graphic designer", qty: 1, additional: undefined },
+      { name: "stylist", qty: 1, additional: undefined },
+      { name: "retoucher", qty: 1, additional: undefined },
     ],
   },
   {
@@ -104,16 +115,16 @@ export const ALL_PACKAGES = [
     id: "7",
     image: "/images/Image.png",
     name: "social media illustration",
-    jobs: [{ name: "graphic designer", qty: 1, additional: null }],
+    jobs: [{ name: "graphic designer", qty: 1, additional: undefined }],
   },
   {
     id: "8",
     image: "/images/Image.png",
     name: "5-month social media photos",
     jobs: [
-      { name: "photographer", qty: 1, additional: null },
-      { name: "content writer", qty: 1, additional: null },
-      { name: "graphic designer", qty: 1, additional: null },
+      { name: "photographer", qty: 1, additional: undefined },
+      { name: "content writer", qty: 1, additional: undefined },
+      { name: "graphic designer", qty: 1, additional: undefined },
     ],
   },
   {
@@ -121,9 +132,9 @@ export const ALL_PACKAGES = [
     image: "/images/Image.png",
     name: "billboard design",
     jobs: [
-      { name: "graphic designer", qty: 1, additional: null },
-      { name: "stylist", qty: 1, additional: null },
-      { name: "retoucher", qty: 1, additional: null },
+      { name: "graphic designer", qty: 1, additional: undefined },
+      { name: "stylist", qty: 1, additional: undefined },
+      { name: "retoucher", qty: 1, additional: undefined },
     ],
   },
   {
@@ -142,16 +153,16 @@ export const ALL_PACKAGES = [
     id: "11",
     image: "/images/Image.png",
     name: "social media illustration",
-    jobs: [{ name: "graphic designer", qty: 1, additional: null }],
+    jobs: [{ name: "graphic designer", qty: 1, additional: undefined }],
   },
   {
     id: "12",
     image: "/images/Image.png",
     name: "3-month social media photos",
     jobs: [
-      { name: "photographer", qty: 1, additional: null },
-      { name: "content writer", qty: 1, additional: null },
-      { name: "graphic designer", qty: 1, additional: null },
+      { name: "photographer", qty: 1, additional: undefined },
+      { name: "content writer", qty: 1, additional: undefined },
+      { name: "graphic designer", qty: 1, additional: undefined },
     ],
   },
   {
@@ -159,9 +170,9 @@ export const ALL_PACKAGES = [
     image: "/images/Image.png",
     name: "Hotel billboard design",
     jobs: [
-      { name: "graphic designer", qty: 1, additional: null },
-      { name: "stylist", qty: 1, additional: null },
-      { name: "retoucher", qty: 1, additional: null },
+      { name: "graphic designer", qty: 1, additional: undefined },
+      { name: "stylist", qty: 1, additional: undefined },
+      { name: "retoucher", qty: 1, additional: undefined },
     ],
   },
   {
@@ -180,16 +191,16 @@ export const ALL_PACKAGES = [
     id: "15",
     image: "/images/Image.png",
     name: "social media illustration",
-    jobs: [{ name: "graphic designer", qty: 1, additional: null }],
+    jobs: [{ name: "graphic designer", qty: 1, additional: undefined }],
   },
   {
     id: "16",
     image: "/images/Image.png",
     name: "3-month social media photos",
     jobs: [
-      { name: "photographer", qty: 1, additional: null },
-      { name: "content writer", qty: 1, additional: null },
-      { name: "graphic designer", qty: 1, additional: null },
+      { name: "photographer", qty: 1, additional: undefined },
+      { name: "content writer", qty: 1, additional: undefined },
+      { name: "graphic designer", qty: 1, additional: undefined },
     ],
   },
 ];
