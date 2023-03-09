@@ -1,0 +1,3 @@
+.text-field {
+  @apply relative items-center w-full border-0 rounded-lg;
+}
