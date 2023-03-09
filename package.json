@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "assignment1": "node assignment1.js"
   },
   "dependencies": {
     "daisyui": "^2.51.3",
