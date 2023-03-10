@@ -8,33 +8,10 @@ import TextField from "../TextField";
 import { PageLayoutProps } from "./types";
 
 const Layout: React.FC<PageLayoutProps> = ({ children }) => {
-  const { isLogin, setIsLogin } = useAuth();
+  const { login, isLogin } = useAuth();
   const [openLoginModal, setOpenLoginModal] = useState<boolean>(false);
   const [userForm, setUserForm] = useState({ username: "", password: "" });
   const [isValid, setIsValid] = useState<boolean>(true);
-
-  const login = async () => {
-    try {
-      const response = await fetch("http://localhost:3000/api/login", {
-        method: "POST",
-        body: JSON.stringify({
-          username: userForm.username,
-          password: userForm.password,
-        }),
-      });
-
-      const result = await response.json();
-      if (result.token) {
-        setIsLogin(true);
-        localStorage.setItem("token", result.token);
-        setOpenLoginModal(false);
-      } else {
-        setIsValid(false);
-      }
-    } catch (error) {
-      throw new Error(error as string);
-    }
-  };
 
   return (
     <>
@@ -90,8 +67,18 @@ const Layout: React.FC<PageLayoutProps> = ({ children }) => {
               <Button
                 className={`btn rounded-lg`}
                 type="secondary"
-                onClick={() => {
-                  login();
+                onClick={async () => {
+                  const response = await login(
+                    userForm.username,
+                    userForm.password
+                  );
+
+                  if (response.token) {
+                    localStorage.setItem("token", response.token);
+                    setOpenLoginModal(false);
+                  } else {
+                    setIsValid(false);
+                  }
                 }}
               >
                 Log in
